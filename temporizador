@@ -1,0 +1,17 @@
+'''
+repetitiva_desde_e.py
+script en python que muestre un Cronómetro en forma de 24 horas.
+El despliegue seguira el formato h:m:s. El Cronómetro debera Iniciar
+en 0:0:0 y podra llegar hasta 23:59:59. Implementar retardos de
+1 segundo y limpieza de pantalla de forma tal que solo se vea un
+tiempo en pantalla.
+'''
+import os
+import time
+
+for hora in range(24):
+    for minuto in range(60):
+        for segundo in range(60):
+            os.system('cls')
+            print(f'{hora}:{minuto}:{segundo}')
+            time.sleep(1)
